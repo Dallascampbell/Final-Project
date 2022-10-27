@@ -5,7 +5,7 @@ def indexPageView(request) :
     text = "This is the Home page"
     return HttpResponse(text)
 
-def calculatorPageView(request) :
+def calculatorView(request) :
     text = "This is the calculator Page"
     return HttpResponse(text)
 
