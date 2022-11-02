@@ -3,7 +3,7 @@ from .views import indexPageView, calculatorView, liftTypeView, bodyTypeView, cr
 
 
 urlpatterns = [
-    path('',indexPageView, name='index'),
+    path('', indexPageView, name='index'),
     path('calculator/', calculatorView, name='calculator'),
     path('liftType/', liftTypeView, name='liftType'),
     path('bodyType/', bodyTypeView, name='bodyType'),
