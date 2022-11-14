@@ -1,22 +1,21 @@
+from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-def indexPageView(request) :
-    text = "This is the Home page"
-    return HttpResponse(text)
+def indexPageView(request):
+    return render(request, 'GainPages/index.html')
+
+def aboutPageView(request):
+    return render(request, 'GainPages/about.html')
 
 def calculatorView(request) :
-    text = "This is the calculator Page"
-    return HttpResponse(text)
+    return render(request, 'GainPages/calculators.html')
 
 def liftTypeView(request) :
-    text = "This is the lift page"
-    return HttpResponse(text)
+    return render(request, 'GainPages/lifts.html')
 
 def bodyTypeView(request) :
-    text = "This is the body type page"
-    return HttpResponse(text)
+    return render(request, 'GainPages/bodyTypes.html')
 
 def crudTableView(request) :
-    text = "This is the crud table"
-    return HttpResponse(text)
+    return render(request, 'GainPages/crudTable.html')
