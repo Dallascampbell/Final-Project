@@ -1,11 +1,12 @@
 from django.urls import path
-from .views import indexPageView, calculatorView, liftTypeView, bodyTypeView, crudTableView
+from .views import aboutPageView, indexPageView, calculatorView, liftTypeView, bodyTypeView, crudTableView
 
 
 urlpatterns = [
-    path('',indexPageView, name='index'),
-    path('calculator/', calculatorView, name='calculator'),
-    path('liftType/', liftTypeView, name='liftType'),
-    path('bodyType/', bodyTypeView, name='bodyType'),
-    path('crud/', crudTableView, name='crud'),
+    path("about/", aboutPageView, name="about"),
+    path("calculators/", calculatorView, name="calculators"),
+    path("lifts/", liftTypeView, name="lifts"),
+    path("bodyTypes/", bodyTypeView, name="bodyTypes"),
+    path("crudTable/", crudTableView, name="crudTable"),
+    path('', indexPageView, name='index'),
 ]
